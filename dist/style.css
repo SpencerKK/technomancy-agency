@@ -1,0 +1,1 @@
+.hero{display:flex;justify-content:center;position:relative}.hero h1{font-size:4em;font-family:"Kumbh Sans";text-transform:uppercase;color:#000;position:absolute;right:2em}.hero video{object-fit:cover;width:90vw;height:90vh;position:absolute;top:0;z-index:-1}*{box-sizing:border-box;margin:0;padding:0}body{font-family:apple}
