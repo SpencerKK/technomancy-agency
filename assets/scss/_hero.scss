@@ -1,29 +1,5 @@
 .hero {
    text-align: center;
-   margin-top: 1.5em;
-   nav {
-      width: 80em;
-      margin: 1em auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      h1 {
-         font-family: $main-font;
-         font-size: 4em;
-         font-weight: 900;
-         text-transform: uppercase;
-         transform: translateY(0.1em);
-      }
-
-      i {
-         font-size: 2em;
-
-         &:hover {
-            cursor: pointer;
-            color: rgb(87, 87, 87);
-         }
-      }
-   }
    video {
       width: 80em;
    }
@@ -31,39 +7,10 @@
 
 @media screen and (max-width: 1274px) {
    .hero {
-      nav {
-         width: 95vw;
-         justify-content: space-between;
-      }
 
       video {
          width: 100vw;
          height: auto;
       }
    }
-}
-
-@media screen and (max-width: 600px) {
-   .hero {
-      nav {
-         h1 {
-            font-size: 2.5em;
-         }
-
-         i {
-            font-size: 1.5em;
-            margin-right: 0.2em;
-         }
-      }
-   }
-}
-
-@media screen and (max-width: 375px) {
-    .hero {
-        nav {
-            h1 {
-                font-size: 10vw;
-            }
-        }
-    }
 }

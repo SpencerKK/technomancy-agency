@@ -1,9 +1,11 @@
 @import "./variables";
+@import "./nav";
 @import "./hero";
-@import "./quick-about";
+@import "./sub_hero";
 @import "./modal";
 
 *,  body {
+    font-family: $main-font;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
