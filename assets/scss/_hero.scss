@@ -17,6 +17,11 @@
 
       i {
          font-size: 2em;
+
+         &:hover {
+            cursor: pointer;
+            color: rgb(87, 87, 87);
+         }
       }
    }
    video {

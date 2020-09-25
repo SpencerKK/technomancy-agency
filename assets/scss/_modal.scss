@@ -1,4 +1,5 @@
 .modal {
+    color: #fff;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -9,20 +10,74 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.927); /* Black w/ opacity */
+    animation: modalAni .5s;
 
     .modal-content {
-        background-color: #fefefe;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $main-font;
         margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
         width: 80%;
+        animation: modalContentAni .5s;
+        display: flex;
+        flex-direction: column;
 
         .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
+            font-size: 4em;
+            font-weight: 400;
+            margin: 0 auto 1em auto;
+            width: 1em;
+            border-bottom: 4px solid #fff;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 4px solid rgba(255, 255, 255, 0.413);
+                animation: closeBtnHoverAni .5s;
+            }
+          }
+
+          ul {
+              list-style: none;
+              li {
+                  font-size: 2.5em;
+                  margin-bottom: 1em;
+              }
           }
       }
+}
+
+@keyframes modalAni {
+    0% {
+        background-color: transparent;
+        color: transparent
+     }
+     100% {
+        background-color: rgba(0, 0, 0, 0.927); 
+        color: #fff;
+     }
+}
+
+@keyframes closeBtnHoverAni {
+    0% {
+        border-bottom: 4px solid #fff;
+    }
+
+    100% {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.413);
+
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .modal {
+        .modal-content {
+            ul {
+                li {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
 }
