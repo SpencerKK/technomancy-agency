@@ -73,6 +73,11 @@
 @media screen and (max-width: 600px) {
     .modal {
         .modal-content {
+
+            .close {
+                font-size: 3em;
+            }
+
             ul {
                 li {
                     font-size: 1.5em;
