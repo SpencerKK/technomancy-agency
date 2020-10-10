@@ -1,0 +1,16 @@
+.welcome {
+
+    .background {
+        background-image: url("../../assets/images/welcome-tmancy.png");
+        opacity: 0.3;
+        background-size: contain;
+        background-repeat: no-repeat;   
+        background-position: center;
+        height: 10vh;
+        margin-bottom: 8vh;
+    }
+
+    text-align: center;
+    height: 15vh;
+    margin-bottom: 15vh;
+}
