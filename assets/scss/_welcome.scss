@@ -4,13 +4,22 @@
         background-image: url("../../assets/images/welcome-tmancy.png");
         opacity: 0.3;
         background-size: contain;
-        background-repeat: no-repeat;   
         background-position: center;
+        background-repeat: repeat-x;
         height: 10vh;
-        margin-bottom: 8vh;
     }
 
+    
     text-align: center;
-    height: 15vh;
-    margin-bottom: 15vh;
+
+    #our-work {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: 300;
+    }
+
+    #our-work-detail {
+        font-size: 1.2em;
+        line-height: 1.2;
+    }
 }
