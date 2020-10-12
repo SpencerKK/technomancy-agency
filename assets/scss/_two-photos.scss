@@ -1,17 +1,181 @@
 .two-photos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 15vh;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 15vh;
+   margin-top: 1.5em;
 
-    img {
-        width: 20em;
-        margin: 0 5vw;
-        margin-top: 2em;
-        box-shadow: 0em;
-    }
+   .brand-services {
+      position: relative;
+      width: 25em;
+      margin-right: 2vw;
+      height: 90vh;
 
-    .right {
-        margin-top: 4em;
-    }
+      button {
+         position: absolute;
+         left: 35%;
+         top: 40%;
+         height: 4em;
+         width: 10em;
+         background: transparent;
+         border: none;
+         display: none;
+         transform: scale(4);
+         text-transform: uppercase;
+         font-weight: 600;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      img {
+         width: 100%;
+         margin-top: 2em;
+      }
+
+      .photo-text {
+         font-size: 1em;
+         font-weight: 600;
+         margin-top: 0.5em;
+         line-height: 1.5;
+
+         p {
+            font-family: "Noto Serif SC";
+            font-weight: 400;
+            letter-spacing: 1.5px;
+         }
+         
+      }
+
+      &:hover {
+         cursor: pointer;
+
+         img {
+            opacity: 0.4;
+         }
+
+         button {
+            display: block;
+         }
+      }
+   }
+
+   .influencers {
+      position: relative;
+      margin-top: 5em;
+      width: 25em;
+      margin-left: 2vw;
+
+      button {
+         position: absolute;
+         left: 34%;
+         top: 40%;
+         height: 4em;
+         width: 10em;
+         background: transparent;
+         border: none;
+         display: none;
+         transform: scale(3.5);
+         text-transform: uppercase;
+         font-weight: 600;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      img {
+         width: 100%;
+         margin-top: 2em;
+      }
+
+      .photo-text {
+         font-size: 1em;
+         font-weight: 600;
+         margin-top: 0.5em;
+         line-height: 1.5;
+
+         p {
+            font-family: "Noto Serif SC";
+            font-weight: 400;
+            letter-spacing: 1.5px;
+         }
+      }
+
+      &:hover {
+         cursor: pointer;
+
+         img {
+            opacity: 0.4;
+         }
+
+         button {
+            display: block;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+   .two-photos {
+      .brand-services {
+         width: 40vw;
+         margin-right: 1vw;
+
+         button {
+            left: 10vw;
+            top: 30vw;
+            width: 20vw;
+            transform: scale(2.5);
+         }
+      }
+
+      .influencers {
+         width: 40vw;
+         margin-left: 1vw;
+
+         button {
+            left: 10vw;
+            height: 5vh;
+            width: 20vw;
+            transform: scale(2.5);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 549px) {
+   .two-photos {
+      .brand-services,
+      .influencers {
+         width: 70vw;
+         margin: 0;
+
+         button {
+            left: 22vw;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .two-photos {
+      .brand-services,
+      .influencers {
+        width: 80vw;
+
+         button {
+            left: 25%;
+         }
+      }
+
+      .brand-services {
+        height: 72vh;
+     }
+
+     .influencers {
+         margin-top: 4em;
+     }
+   }
 }
