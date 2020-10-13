@@ -1,23 +1,35 @@
 .creators {
-    margin-bottom: 50vh;
-    max-width: 95vw;
-    margin: 0 auto;
-    #creators-header {
-        text-align: center;
-        p {
-            font-size: 2em;
-        }
-    }
+   margin-bottom: 50vh;
+   max-width: 95vw;
+   margin: 0 auto;
+   text-align: center;
+   #creators-header {
+      text-align: center;
+      p {
+         font-size: 2em;
+      }
+   }
 
-    .creators-pics {
-        margin-top: 2em;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+   .creators-pics {
+      margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
 
-        img {
-            width: 25vw;
-            margin: 1vw
-        }
-    }
+      img {
+         width: 30%;
+         margin: 1vw;
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .creators {
+      max-width: 98vw;
+      .creators-pics {
+         img {
+            width: 45vw;
+         }
+      }
+   }
 }
