@@ -1,6 +1,7 @@
 .insta-feed {
     margin-bottom: 40vh;
     text-align: center;
+    margin-top: 8em;
 
     p {
         font-size: 2em;
@@ -11,6 +12,13 @@
         & span {
             font-family: "Noto Sans SC";
             font-size: 0.7em;
+            color: rgb(122, 122, 122);
+
+            &:hover {
+                color: rgb(82, 82, 82);
+                cursor: pointer;
+                font-style: oblique;
+            }
         }
     }
 }
