@@ -1,0 +1,73 @@
+.clients {
+   background-color: rgb(24, 24, 24);
+   min-height: 60vh;
+   margin-bottom: 40vh;
+
+   .clients-bg {
+      min-height: 60vh;
+      position: relative;
+      background-position: center;
+      background-size: 60vw;
+      background-repeat: repeat-x;
+      background-attachment: fixed;
+
+      .clients-title {
+          color: #fff;
+          text-align: center;
+          margin-bottom: 2em;
+          padding-top: 4em;
+
+          #clients-title-text {
+              font-weight: 300;
+              margin-bottom: 1em;
+          }
+
+          #clients-title-detail {
+              line-height: 1.2;
+              font-size: 1.5em;
+              font-weight: 400;
+              font-family: "Noto Serif SC";
+          }
+      }
+
+      .logo-list {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         max-width: 50vw;
+         margin: 0 auto;
+         min-height: 60vh;
+         img {
+            width: 7em;
+            align-self: center;
+            margin: 1em;
+         }
+
+         #mcm {
+            width: 4em;
+         }
+
+         #got2b {
+            width: 5em;
+         }
+      }
+   }
+
+   .clients-bg-img {
+      height: 100%;
+      background-image: url("../../assets/images/our-clients.png");
+   }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .clients {
+        .clients-bg {
+            .logo-list {
+                max-width: 95vw;
+            }
+        }
+    }
+}
