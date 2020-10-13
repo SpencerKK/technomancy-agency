@@ -1,11 +1,9 @@
 .nav-wrapper {
-   position: sticky;
-   top: 0;
    width: 100vw;
    z-index: 1;
-
-   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.945);
    padding: 0.5em 0;
+   border-bottom: 2px solid #fff;
    nav {
       width: 80em;
       display: flex;
