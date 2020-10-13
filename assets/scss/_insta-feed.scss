@@ -1,0 +1,16 @@
+.insta-feed {
+    margin-bottom: 40vh;
+    text-align: center;
+
+    p {
+        font-size: 2em;
+        // font-family: "Noto Sans SC";
+        margin-bottom: 1em;
+        font-weight: 500;
+
+        & span {
+            font-family: "Noto Sans SC";
+            font-size: 0.7em;
+        }
+    }
+}
