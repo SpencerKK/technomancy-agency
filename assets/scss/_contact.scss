@@ -1,0 +1,58 @@
+.contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+
+    .brands, .influencers {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+
+        p {
+            font-size: 3em;
+            font-family: "Noto Serif SC";
+        }
+
+        .contact-detail {
+            p {
+                font-size: 1em; 
+                margin: 1em;
+            }
+
+            svg {
+                font-size: 2em;
+            }
+
+            .email {    
+                &:hover {
+                    font-style: italic;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .brands {
+        background: rgb(34, 34, 34);
+        color: #EEE7CA;
+    }
+    .influencers {
+        background: #EEE7CA;
+        color: rgb(34, 34, 34);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact {
+        flex-direction: column;
+
+        .brands, .influencers {
+            height: 100vh;
+        }
+    }
+}
