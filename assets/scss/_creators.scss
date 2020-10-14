@@ -16,9 +16,46 @@
       justify-content: center;
       flex-wrap: wrap;
 
-      img {
+      .creator-node {
          width: 30%;
          margin: 1vw;
+         position: relative;
+         display: flex;
+         justify-content: center;
+
+         &:hover {
+            cursor: pointer;
+
+            img {
+                opacity: 0.4;
+            }
+
+            .node-text {
+                display: block;
+            }
+         }
+
+         img {
+            width: 100%;
+         }
+
+         .node-text {
+             position: absolute;
+             top: 50%;
+             display: none;
+             line-height: 1.4;
+
+             #name {
+                 font-size: 2vw;
+                 font-weight: 100;
+                 border-bottom: 2px solid #000;
+             }
+
+             #project {
+                 font-weight: 700;
+                 padding-top: 0.3em;
+             }
+         }
       }
    }
 }
@@ -26,9 +63,22 @@
 @media screen and (max-width: 600px) {
    .creators {
       max-width: 98vw;
+
+      #creators-header {
+        text-align: center;
+        p {
+           font-size: 5vw;
+        }
+     }
       .creators-pics {
-         img {
-            width: 45vw;
+         .creator-node {
+             width: 45vw;
+
+             .node-text {
+                 #name {
+                     font-size: 5vw;
+                 }
+             }
          }
       }
    }
