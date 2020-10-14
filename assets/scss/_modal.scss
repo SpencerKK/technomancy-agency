@@ -41,6 +41,15 @@
               li {
                   font-size: 1.5em;
                   margin-bottom: 1em;
+
+                  a {
+                      color: #fff;
+                      text-decoration: none;
+
+                      &:hover {
+                        color: #ccc;
+                      }
+                  }
               }
           }
       }
