@@ -41,10 +41,8 @@
    }
 
    .section-b {
-    padding: 1em 0;
+      padding: 1em 0;
       margin-top: 7em;
-    //   background-color:#eee7ca;
-
 
       .section-b-content {
          display: flex;
@@ -52,27 +50,27 @@
          align-items: center;
          margin: 0 auto;
 
-        .section-b-text {   
+         .section-b-text {
             margin-right: 4vw;
             text-align: right;
 
             h1 {
-                font-size: 2.5em;
-                text-decoration: underline;
-                text-decoration-color: rgb(135, 255, 209);;
-                margin-bottom: 0.2em;
+               font-size: 2.5em;
+               text-decoration: underline;
+               text-decoration-color: rgb(135, 255, 209);
+               margin-bottom: 0.2em;
             }
 
             ul {
-                margin-right: 2.5vw;
-                li {
-                   font-size: 1em;
-                   line-height: 1.7;
-                   font-weight: 400;
-                   text-align: right;
-                }
-             }
-        }
+               margin-right: 2.5vw;
+               li {
+                  font-size: 1em;
+                  line-height: 1.7;
+                  font-weight: 400;
+                  text-align: right;
+               }
+            }
+         }
 
          img {
             width: 40vw;
@@ -80,6 +78,43 @@
             box-shadow: -15px -15px rgb(255, 135, 135);
          }
       }
+   }
+
+   .section-c {
+       margin-top: 7em;
+       
+       .section-c-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        img {
+            width: 30vw;
+            align-self: center;
+            box-shadow: 15px -15px #F5CB44;
+        }
+
+        .section-c-text {
+            margin-left: 4vw;
+
+            h1 {
+                font-size: 2.5em;
+                text-decoration: underline;
+                text-decoration-color: #ff4a47;
+                margin-bottom: 0.2em;
+             }
+
+             ul {
+                margin-left: 2.5vw;
+                li {
+                   font-size: 1em;
+                   line-height: 1.7;
+                   font-weight: 400;
+                }
+             }
+        }
+       }
    }
 }
 
@@ -107,14 +142,14 @@
       }
 
       .section-b {
-        .section-b-content {
+         .section-b-content {
             .section-b-text {
-                h1 {
-                    font-size: 2em;
-                    max-width: 10em;
-                }
+               h1 {
+                  font-size: 2em;
+                  max-width: 10em;
+               }
             }
-        }
+         }
       }
    }
 }
@@ -150,34 +185,45 @@
       }
 
       .section-b {
-          padding: 0;
-        .section-b-content {
+         padding: 0;
+         .section-b-content {
             flex-direction: column;
             .section-b-text {
-                margin-right: 0;
-                h1 {
-                    font-size: 2.5em;
-                    max-width: 100vw;
-                    text-align: center;
-                }
+               margin-right: 0;
+               h1 {
+                  font-size: 2.5em;
+                  max-width: 100vw;
+                  text-align: center;
+               }
 
-                ul {
-                    direction: ltr;
-                    max-width: 80vw;
-                    margin: 0 auto;
-                    margin-top: 1.2em;
+               ul {
+                  direction: ltr;
+                  max-width: 80vw;
+                  margin: 0 auto;
+                  margin-top: 1.2em;
 
-                    li {
-                    text-align: left;
-                    }
-                }
+                  li {
+                     text-align: left;
+                  }
+               }
             }
             img {
-                margin-top: 2em;
-                width: 85vw;
-                align-self: center;
-             }
-        }
+               margin-top: 2em;
+               width: 85vw;
+               align-self: center;
+            }
+         }
+      }
+
+      .section-c {
+          .section-c-content {
+              flex-direction: column-reverse;
+
+              img {
+                  width: 85vw;
+                  margin-top: 3em;
+              }
+          }
       }
    }
 }
