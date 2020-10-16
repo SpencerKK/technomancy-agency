@@ -11,7 +11,6 @@
 }
 
 .influencer {
-   margin-bottom: 3em;
    .section-a {
       display: flex;
       max-width: 70vw;
@@ -41,9 +40,10 @@
    }
 
    .section-b {
-      padding: 1em 0;
+      padding: 2em 0;
       margin-top: 7em;
-
+    //   background: #eee7ca;
+      
       .section-b-content {
          display: flex;
          justify-content: center;
@@ -116,6 +116,49 @@
         }
        }
    }
+
+   .section-d {
+       margin-top: 7em;
+       text-align: center;
+       background: rgb(34, 34, 34);
+       padding: 3em 0;
+
+       .content-wrapper {
+           max-width: 50em;
+           margin: 0 auto;
+           color: #fff;
+
+           h1 {
+               margin-bottom: 1em;
+                // font-size: 1em;
+           }
+
+           p {
+               font-size: 1em;
+               line-height: 2;
+               font-weight: 100;
+               font-family: "Noto Serif SC";
+           }
+       }
+
+       svg {
+           color: pink;
+           font-size: 1.5em;
+           margin-top: 1em;
+       }
+
+       #contact {
+        color: #fff;
+        margin-top: 1em;
+        text-decoration: underline;
+
+        &:hover {
+            font-style: oblique;
+            cursor: pointer;
+            color: pink;
+        }
+    }
+   }
 }
 
 ////// Breakpoints
@@ -151,6 +194,16 @@
             }
          }
       }
+
+      .section-d {
+        .content-wrapper {
+            max-width: 60vw;
+            p {
+                font-size: 1.1em;
+                line-height: 2;
+            }
+        }
+    }
    }
 }
 
@@ -185,7 +238,6 @@
       }
 
       .section-b {
-         padding: 0;
          .section-b-content {
             flex-direction: column;
             .section-b-text {
@@ -225,5 +277,15 @@
               }
           }
       }
+
+      .section-d {
+        .content-wrapper {
+            max-width: 90vw;
+            p {
+                font-size: 1em;
+                line-height: 1.8;
+            }
+        }
+    }
    }
 }
