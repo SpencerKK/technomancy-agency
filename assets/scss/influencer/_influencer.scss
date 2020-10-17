@@ -289,3 +289,30 @@
     }
    }
 }
+
+@media screen and (min-width: 1200px) {
+   .influencer {
+      .section-a {
+         width: 70vw;
+         max-width: 80em;
+         img {
+            width: 25vw;
+            max-width: 25em;
+         }
+      }
+
+      .section-b {
+         width: 70vw;
+         max-width: 80em;
+         padding: 2em 0;
+         margin: 4em auto 0 auto;
+         
+         .section-b-content {
+            img {
+               width: 35vw;
+               max-width: 35em;
+            }
+         }
+      }
+   }
+}
