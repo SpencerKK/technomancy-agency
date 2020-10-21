@@ -28,11 +28,15 @@
                 font-size: 2em;
             }
 
-            .email {    
+            a {
+                color: rgb(34,34,34);
+                text-decoration: none;
+                .email {    
 
-                &:hover {
-                    font-style: italic;
-                    cursor: pointer;
+                    &:hover {
+                        font-style: italic;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -40,7 +44,9 @@
 
     .brands {
         background: rgb(34, 34, 34);
-        color: #EEE7CA;
+        a, p, svg {
+            color: #EEE7CA;
+        }
     }
     .influencers {
         background: #EEE7CA;
