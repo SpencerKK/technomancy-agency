@@ -1,10 +1,10 @@
 .clients {
    background-color: rgb(24, 24, 24);
-   min-height: 60vh;
+   min-height: 55vh;
    margin-bottom: 5vh;
 
    .clients-bg {
-      min-height: 60vh;
+      min-height: 55vh;
       position: relative;
       background-position: center;
       background-size: 60vw;
@@ -69,6 +69,18 @@
         .clients-bg {
             .logo-list {
                 max-width: 95vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .clients {
+        .clients-bg {
+            .logo-list {
+                img {
+                    width: 12em;
+                }
             }
         }
     }
