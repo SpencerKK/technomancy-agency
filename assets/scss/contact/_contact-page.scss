@@ -104,9 +104,16 @@
                 margin-bottom: 0.5em;
             }
 
-            p {
+            a {
                 font-size: 1.1em;
                 line-height: 1.5;
+                color: #000;
+                text-decoration: none;
+                display: block;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
