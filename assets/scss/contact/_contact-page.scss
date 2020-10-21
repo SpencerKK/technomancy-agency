@@ -1,0 +1,49 @@
+.contact-form-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    form {
+        width: 35em;
+        height: 20em;
+        margin: 0 auto;
+        border: 2px solid rgb(34, 34, 34);
+        box-shadow: -10px -10px orange;
+
+        .contact-top {
+            display: flex;
+            justify-content: center;
+
+            input { 
+                // flex: 1;
+                width: 50%;
+                margin: 1em;
+                height: 3.5em;
+                padding-left: 1em;
+            }
+        }
+
+        textarea {
+            width: 95%;
+            height: 11em;
+            resize: none;
+            padding: 1em;
+        }
+
+        button {
+            margin-top: 1em;
+            background: rgb(34, 34, 34);
+            border: none;
+            color: #fff;
+            height: 2.5em;
+            width: 6em;
+        }
+    }
+}
