@@ -22,34 +22,44 @@
       </div>
 
       <div class="contact-page-header">
-          <p>Get In Touch. We'd Love To Hear From You</p>
+         <p>Get In Touch. We'd Love To Hear From You</p>
       </div>
 
       <div class="contact-wrapper">
          <div class="left">
-            <form>
-                <p id="new-business">New Business Inquiries</p>
+            <form action="https://formspree.io/f/xbjpokrn" method="POST">
+               <p id="new-business">New Business Inquiries</p>
                <div class="contact-top">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="tel" placeholder="Phone Number (optional)" />
+                  <input type="text" name="name" placeholder="Name" required />
+                  <input type="email" name="email" placeholder="Email" required />
+                  <input type="tel" name="telephone" placeholder="Phone Number (optional)" />
                </div>
-               <textarea placeholder="Message"></textarea>
+               <textarea placeholder="Message" name="message" required></textarea>
                <button>Submit</button>
             </form>
          </div>
          <div class="right">
-             <div class="contact-options">
-                 <p id="contact-email">Email</p>
-                 <p class="contact-contact">Brands: <span>contact@technomancyagency.com</span></p>
-                 <p class="contact-contact">Representation: <span>management@technomancyagency.com</span></p>
-             </div>
-             <div class="socials">
-                 <p id="get-connected">Get Connected</p>
-                 <p>Instagram</p>
-                 <p>Facebook</p>
-                 <p>LinkedIn</p>
-             </div>
+            <div class="contact-options">
+               <p id="contact-email">Email</p>
+               <p class="contact-contact">
+                  Brands:
+                  <a href="mailto:contact@technomancyagency.com"
+                     >contact@technomancyagency.com</a
+                  >
+               </p>
+               <p class="contact-contact">
+                  Representation:
+                  <a href="mailto:management@technomancyagency.com"
+                     >management@technomancyagency.com</a
+                  >
+               </p>
+            </div>
+            <div class="socials">
+               <p id="get-connected">Get Connected</p>
+               <p>Instagram</p>
+               <p>Facebook</p>
+               <p>LinkedIn</p>
+            </div>
          </div>
       </div>
 

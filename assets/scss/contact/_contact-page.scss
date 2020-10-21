@@ -49,6 +49,10 @@
                 height: 12em;
                 resize: none;
                 padding: 1em;
+
+                &:focus {
+                    outline: 5px solid yellow;
+                }
             }
 
             button {
@@ -78,8 +82,15 @@
                 display: flex;
                 flex-direction: column;
                 // text-align: center;
-                span {
+                a {
                     font-weight: 100;
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover {
+                        font-style: oblique;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -190,5 +201,17 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-page-header {
+        width: 70vw;
+        max-width: 80em;
+    }
+
+    .contact-wrapper {
+        width: 70vw;
+        max-width: 80em;
     }
 }
