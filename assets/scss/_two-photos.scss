@@ -32,6 +32,11 @@
              border: none;
              outline: none;
          }
+
+         a {
+             color: #000;
+             text-decoration: none;
+         }
       }
 
       img {
@@ -92,6 +97,11 @@
          &:active, &:focus {
             border: none;
             outline: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
         }
       }
 
