@@ -8,6 +8,7 @@
          src="https://kit.fontawesome.com/228a485911.js"
          crossorigin="anonymous"
       ></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
       <title>Technomancy - Influencer Marketing</title>
    </head>
@@ -24,8 +25,8 @@
 
       <div class="influencer">
          <div class="section-a">
-            <img src="assets/images/influencers-page/1.png" />
-            <div class="section-a-text">
+            <img src="assets/images/influencers-page/1.png" data-aos="fade-right" data-aos-duration="1500" />
+            <div class="section-a-text" data-aos="fade-left" data-aos-duration="1500">
                <h3 id="headline-a">
                   Elevating brands and empowering creators through today’s most
                   trusted forms of marketing
@@ -45,7 +46,7 @@
 
          <div class="section-b">
             <div class="section-b-content">
-                <div class="section-b-text">
+                <div class="section-b-text" data-aos="fade-down" data-aos-duration="1500">
                     <h1>Paid Influencer Campaigns</h1>
                     <ul dir="rtl">
                         <li>Strategy & Budgeting</li>
@@ -57,14 +58,14 @@
                         <li>Campaign Analysis & Reporting</li>
                     </ul>
                 </div>
-                <img src="assets/images/influencers-page/influ.png" />
+                <img src="assets/images/influencers-page/influ.png" data-aos="fade-up" data-aos-duration="1500" />
             </div>
          </div>
 
          <div class="section-c">
              <div class="section-c-content">
-                <img src="assets/images/influencers-page/red-beanie.png" />
-                 <div class="section-c-text">
+                <img src="assets/images/influencers-page/red-beanie.png" data-aos="fade-right" data-aos-duration="1500" />
+                 <div class="section-c-text" data-aos="fade-left" data-aos-duration="1500">
                      <h1>Content Creation</h1>
                      <ul>
                          <li>Community & User-Generated Content</li>
@@ -122,5 +123,9 @@
       </div>
 
       <script src="main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+       </script>
    </body>
 </html>
